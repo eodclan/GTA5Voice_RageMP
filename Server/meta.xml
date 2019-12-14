@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<meta>
+	<info name="DerStr1k3r" author="DerStr1k3r" type="gamemode" shadowcopy="true"/>
+	<script src="Voice-System.dll"/>
+
+	<!-- Settings from your Teamspeak 3 Server-->
+	<settings>
+		<setting name="teamspeak_query_address" value="yoururl"/>
+		<setting name="teamspeak_query_port" value="10011"/>
+		<setting name="teamspeak_port" value="9987"/>
+		<setting name="teamspeak_login" value="serveradmin"/>
+		<setting name="teamspeak_password" value="youpassword"/>
+		<setting name="teamspeak_channel" value="Ingame"/>
+    </settings>
+	
+</meta>

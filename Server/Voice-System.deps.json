@@ -1,0 +1,105 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Voice-System/3.80": {
+        "dependencies": {
+          "Bootstrapper": "0.3.7.0",
+          "Newtonsoft.Json": "12.0.0.0"
+        },
+        "runtime": {
+          "Voice-System.dll": {}
+        }
+      },
+      "Bootstrapper/0.3.7.0": {
+        "runtime": {
+          "Bootstrapper.dll": {
+            "assemblyVersion": "0.3.7.0",
+            "fileVersion": "0.3.7.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.0.0": {
+        "runtime": {
+          "Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
+      "Colorful.Console/1.2.6.0": {
+        "runtime": {
+          "Colorful.Console.dll": {
+            "assemblyVersion": "1.2.6.0",
+            "fileVersion": "1.2.6.0"
+          }
+        }
+      },
+      "Ben.Demystifier/0.1.0.0": {
+        "runtime": {
+          "Ben.Demystifier.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.61280"
+          }
+        }
+      },
+      "NeoSmart.Hashing/0.1.0.0": {
+        "runtime": {
+          "NeoSmart.Hashing.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "xxHash/0.3.0.0": {
+        "runtime": {
+          "xxHash.dll": {
+            "assemblyVersion": "0.3.0.0",
+            "fileVersion": "0.3.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Voice-System/3.80": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bootstrapper/0.3.7.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/12.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Colorful.Console/1.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ben.Demystifier/0.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NeoSmart.Hashing/0.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "xxHash/0.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

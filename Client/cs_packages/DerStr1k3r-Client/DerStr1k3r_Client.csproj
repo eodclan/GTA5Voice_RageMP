@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>DerStr1k3r_Client</RootNamespace>
+    <LangVersion>7.1</LangVersion>
+    <AssemblyName>DerStr1k3r-Client</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>E:\RAGEMP\dotnet\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="rage-sharp">
+      <HintPath>E:\RAGEMP\dotnet\rage-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

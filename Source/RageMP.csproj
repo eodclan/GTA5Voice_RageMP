@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup>
+<TargetFramework>netcoreapp2.2</TargetFramework>
+    <RuntimeFrameworkVersion>2.0.7</RuntimeFrameworkVersion>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>C:\RAGEMP\server-files\bridge\resources\empire\Backup1\</UpgradeBackupLocation>
+<OldToolsVersion>2.0</OldToolsVersion>
+<Version>3.80</Version>
+<Copyright>© DerStr1k3r. All rights reserved.</Copyright>
+<AssemblyName>Voice-System</AssemblyName>
+<RootNamespace>Voice_System</RootNamespace>
+<LangVersion>7.3</LangVersion>
+<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+	<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+</PropertyGroup>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  <OutputPath>bin\Debug\netcoreapp2.2\</OutputPath>
+  <Optimize>false</Optimize>
+  <DocumentationFile></DocumentationFile>
+</PropertyGroup>
+<ItemGroup>
+  <Compile Remove="FL-Map\**" />
+  <Compile Remove="login\**" />
+  <Compile Remove="Maps\**" />
+  <Compile Remove="Map\**" />
+  <Compile Remove="SaltyServer\**" />
+  <Compile Remove="SaltyShared\**" />
+  <Compile Remove="scriptmetadata.meta~RF6059d5.TMP\**" />
+  <EmbeddedResource Remove="FL-Map\**" />
+  <EmbeddedResource Remove="login\**" />
+  <EmbeddedResource Remove="Maps\**" />
+  <EmbeddedResource Remove="Map\**" />
+  <EmbeddedResource Remove="SaltyServer\**" />
+  <EmbeddedResource Remove="SaltyShared\**" />
+  <EmbeddedResource Remove="scriptmetadata.meta~RF6059d5.TMP\**" />
+  <None Remove="FL-Map\**" />
+  <None Remove="login\**" />
+  <None Remove="Maps\**" />
+  <None Remove="Map\**" />
+  <None Remove="SaltyServer\**" />
+  <None Remove="SaltyShared\**" />
+  <None Remove="scriptmetadata.meta~RF6059d5.TMP\**" />
+</ItemGroup>
+<ItemGroup>
+  <Compile Remove="Crafting\SecreatWeaponCrafting.cs" />
+  <Compile Remove="Crafting\WeaponCrafting.cs" />
+  <Compile Remove="Deposit.cs" />
+  <Compile Remove="Farming\Blutwaschen.cs" />
+  <Compile Remove="Hunting.cs" />
+  <Compile Remove="Jobs\Fishing.cs" />
+  <Compile Remove="PingCheck.cs" />
+  <Compile Remove="Framework\playerInventory.cs" />
+  <Compile Remove="Framework\VIP.cs" />
+  <Compile Remove="Service\AfkManager.cs" />
+  <Compile Remove="Service\Utils.cs" />
+</ItemGroup>
+<ItemGroup>
+  <None Remove="backup.sql" />
+  <None Remove="Backup26-02-2019.sql" />
+  <None Remove="BackupNeu.sql" />
+  <None Remove="business.rar" />
+  <None Remove="Jobs.rar" />
+  <None Remove="Framework\HouseSystem.rar" />
+  <None Remove="Framework\Inventory.rar" />
+  <None Remove="Service.rar" />
+</ItemGroup>
+<ItemGroup>
+  <Reference Include="Bootstrapper">
+    <HintPath>E:\RAGEMP\server-files\bridge\runtime\Bootstrapper.dll</HintPath>
+  </Reference>
+  <Reference Include="Newtonsoft.Json">
+    <HintPath>E:\RAGEMP\dotnet\Newtonsoft.Json.dll</HintPath>
+  </Reference>
+</ItemGroup>
+</Project>
