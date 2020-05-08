@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 <PropertyGroup>
-<TargetFramework>netcoreapp2.2</TargetFramework>
+<TargetFramework>netcoreapp3.1</TargetFramework>
     <RuntimeFrameworkVersion>2.0.7</RuntimeFrameworkVersion>
     <FileUpgradeFlags>40</FileUpgradeFlags>
     <UpgradeBackupLocation>C:\RAGEMP\server-files\bridge\resources\empire\Backup1\</UpgradeBackupLocation>
@@ -68,8 +68,11 @@
   <None Remove="Service.rar" />
 </ItemGroup>
 <ItemGroup>
+  <PackageReference Include="System.Runtime" Version="4.3.1" />
+</ItemGroup>
+<ItemGroup>
   <Reference Include="Bootstrapper">
-    <HintPath>E:\RAGEMP\server-files\bridge\runtime\Bootstrapper.dll</HintPath>
+    <HintPath>E:\RAGEMP4\server-files\dotnet\runtime\Bootstrapper.dll</HintPath>
   </Reference>
   <Reference Include="Newtonsoft.Json">
     <HintPath>E:\RAGEMP\dotnet\Newtonsoft.Json.dll</HintPath>

@@ -81,7 +81,7 @@ namespace RAGEMP_TsVoice
         {
             string voiceRange = "Normal";
             if (client.HasSharedData("VOICE_RANGE"))
-                voiceRange = client.GetSharedData("VOICE_RANGE");
+                voiceRange = client.GetSharedData<string>("VOICE_RANGE");
 
 
             switch (voiceRange)
@@ -137,7 +137,7 @@ namespace RAGEMP_TsVoice
                     if (players[i] == null)
                         continue;
 
-                    var name = players[i].GetSharedData("TsName");
+                    var name = players[i].GetSharedData<string>("TsName");
                     var tsplayer = clientschannel.Find(p => p.NickName == name);
                     var player = players[i];
 
