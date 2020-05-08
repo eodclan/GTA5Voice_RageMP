@@ -39,7 +39,7 @@ namespace RAGEMP_TsVoice
         }
 
         [Command("tsstop")]
-        public static void tsstop(Client client)
+        public static void tsstop(Player client)
         {
             client.TriggerEvent("DisconnectTeamspeak");
         }
@@ -77,7 +77,7 @@ namespace RAGEMP_TsVoice
         }
 
         [RemoteEvent("ChangeVoiceRange")]
-        public void ChangeVoiceRange(Client client)
+        public void ChangeVoiceRange(Player client)
         {
             string voiceRange = "Normal";
             if (client.HasSharedData("VOICE_RANGE"))
@@ -100,7 +100,7 @@ namespace RAGEMP_TsVoice
             client.SendNotification("Voice Range: " + voiceRange);
         }
 
-        public static void Connect(Client client, string characterName)
+        public static void Connect(Player client, string characterName)
         {
             client.SetSharedData("VOICE_RANGE", "Normal");
             client.SetSharedData("TsName", characterName);

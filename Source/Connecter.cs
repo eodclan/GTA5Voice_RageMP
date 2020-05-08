@@ -16,7 +16,7 @@ namespace RAGEMP_TsVoice_Connecter
 		
 		// Char Select Remote Event
         [RemoteEvent("authCharacter")]
-        public void ChangeVoiceRange(Client player)
+        public void ChangeVoiceRange(Player player)
         {
             RAGEMP_TsVoice.Teamspeak.Connect(player, RAGEMP_TsVoice.Teamspeak.GetRandomString());
         }
