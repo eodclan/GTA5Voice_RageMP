@@ -72,7 +72,7 @@
 </ItemGroup>
 <ItemGroup>
   <Reference Include="Bootstrapper">
-    <HintPath>E:\RAGEMP4\server-files\dotnet\runtime\Bootstrapper.dll</HintPath>
+    <HintPath>E:\RAGEMP\server-files\dotnet\runtime\Bootstrapper.dll</HintPath>
   </Reference>
   <Reference Include="Newtonsoft.Json">
     <HintPath>E:\RAGEMP\dotnet\Newtonsoft.Json.dll</HintPath>
