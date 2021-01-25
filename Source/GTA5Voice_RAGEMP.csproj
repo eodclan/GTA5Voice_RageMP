@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup>
+<TargetFramework>netcoreapp3.1</TargetFramework>
+    <RuntimeFrameworkVersion>2.0.7</RuntimeFrameworkVersion>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>C:\RAGEMP\server-files\bridge\resources\empire\Backup1\</UpgradeBackupLocation>
+<OldToolsVersion>2.0</OldToolsVersion>
+<Version>3.80</Version>
+<Copyright>© DerStr1k3r. All rights reserved.</Copyright>
+<AssemblyName>GTA5Voice_RAGEMP</AssemblyName>
+<RootNamespace>GTA5Voice_RAGEMP</RootNamespace>
+<LangVersion>7.3</LangVersion>
+<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+	<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+</PropertyGroup>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  <OutputPath>bin\Debug\</OutputPath>
+  <Optimize>false</Optimize>
+  <DocumentationFile></DocumentationFile>
+</PropertyGroup>
+<ItemGroup>
+  <Reference Include="Bootstrapper">
+    <HintPath>E:\RAGEMP\server-files\dotnet\runtime\Bootstrapper.dll</HintPath>
+  </Reference>
+  <Reference Include="Newtonsoft.Json">
+    <HintPath>E:\RAGEMP\dotnet\Newtonsoft.Json.dll</HintPath>
+  </Reference>
+</ItemGroup>
+</Project>
