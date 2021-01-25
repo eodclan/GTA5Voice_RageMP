@@ -13,7 +13,6 @@ namespace RAGEMP_TsVoice_Connecter
             Console.WriteLine("Teamspeak Connecter Initialization...");
         }
 
-		
 		// Char Select Remote Event
         [RemoteEvent("authCharacter")]
         public void ChangeVoiceRange(Player player)

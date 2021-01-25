@@ -93,6 +93,9 @@ namespace RAGEMP_TsVoice
                     voiceRange = "Kurz";
                     break;
                 case "Kurz":
+                    voiceRange = "Stumm";
+                    break;
+                case "Stumm":
                     voiceRange = "Normal";
                     break;
             }

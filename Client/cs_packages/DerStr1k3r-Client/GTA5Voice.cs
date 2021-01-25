@@ -10,11 +10,13 @@ namespace RAGEMP_TsVoiceClient
         #region Variables
         private HtmlWindow tsBrowser;
         private string tsname;
+		HtmlWindow gta5voice_ui_cef = null;
         #endregion
 
         #region Constructor
         public TS_Connector()
         {
+			gta5voice_ui_cef = new HtmlWindow("package://GTA5_Voice/mic.html") {Active = true};
             RAGE.Events.Add("ConnectTeamspeak", ConnectTeamspeak);
             RAGE.Events.Add("DisconnectTeamspeak", DisconnectTeamspeak);
             RAGE.Events.Add("Teamspeak_LipSync", Teamspeak_LipSync);           
@@ -85,10 +87,25 @@ namespace RAGEMP_TsVoiceClient
                     var range = 12;
 
                     if (voiceRange == "Weit")
+                    {
                         range = 50;
-
+                        gta5voice_ui_cef.ExecuteJs("(document.getElementById('voiceColor')).style.backgroundColor = 'rgba(255, 0, 0, 0.72)';");
+                    }
+                    else if (voiceRange == "Normal")
+                    {
+                        range = 15;
+                        gta5voice_ui_cef.ExecuteJs("(document.getElementById('voiceColor')).style.backgroundColor = 'rgba(255, 0, 0, 0.39)';");
+                    }
                     else if (voiceRange == "Kurz")
+                    {
+                        gta5voice_ui_cef.ExecuteJs("(document.getElementById('voiceColor')).style.backgroundColor = 'rgba(255, 0, 0, 0.21)';");
                         range = 5;
+                    }
+                    else if (voiceRange == "Stumm")
+                    {
+                        gta5voice_ui_cef.ExecuteJs("(document.getElementById('voiceColor')).style.backgroundColor = 'rgba(255, 0, 0, 0)';");
+                        range = 0;
+                    }
 
                     if (distance > 5)
                         volumeModifier = (distance * -8 / 10);
